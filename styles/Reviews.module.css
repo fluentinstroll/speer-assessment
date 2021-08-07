@@ -1,0 +1,32 @@
+.reviews-main{
+    background-color: rgb(115, 216, 250);
+    padding: 11%;
+}
+
+.reviews-container{
+    display: flex;
+}
+
+.reviews-header{
+    color: white;
+    font-size: 50px;
+
+}
+
+.reviews-statement {
+    color: white;
+    font-size: 30px;
+}
+
+.reviews-content {
+    margin-top: 15%;
+    display: flex;
+}
+
+.reviews-image{
+    padding-right: 10%;
+}
+
+.review {
+    padding-right: 5%;
+}
