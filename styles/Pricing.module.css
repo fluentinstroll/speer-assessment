@@ -1,0 +1,36 @@
+
+.pricing-main {
+    padding: 11%;
+    background: darkslategray;
+}
+
+.pricing-container {
+    display: flex;
+}
+
+.pricing-info {
+    margin-right: 5%;
+}
+
+.pricing-fonts {
+    font-size: 30px;
+    margin: 3px;
+    color: white;
+}
+
+.pricing-h1 {
+    font-size: 50px;
+    margin: 3px;
+}
+
+.pricing-important1 {
+    color: red;
+}
+
+.pricing-important2 {
+    color: yellow;
+}
+
+.pricing-important3 {
+    color: lightblue;
+}

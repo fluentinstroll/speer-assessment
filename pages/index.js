@@ -12,7 +12,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.frontpageText}>Interactive Concert Experience</h1>
         <h2 className={styles.frontpageText}>Experience your favourite artists like never before and from the comfort of your own home</h2>
-        <a href="#" className={styles['btn-mix-noborder']}>TRY IT NOW</a>
+        <a href="/pricing" className={styles['btn-mix-noborder']}>TRY IT NOW</a>
       </main>
 
     </div>
