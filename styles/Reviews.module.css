@@ -30,3 +30,40 @@
 .review {
     padding-right: 5%;
 }
+
+.button-try {
+    position: relative;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    padding: 1em 2em;
+    border: none;
+    color: rgb(115, 216, 250);
+    background-color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 100px;
+    margin-left: 80%;
+  }
+  .button-try span {
+    position: relative;
+    pointer-events: none;
+  }
+  .button-try::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #4405f7, transparent);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    transition: width .2s ease, height .2s ease;
+  }
+  .button-try:hover::before {
+    --size: 400px;
+  }

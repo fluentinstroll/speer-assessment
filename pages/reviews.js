@@ -1,10 +1,16 @@
 import styles from '../styles/Reviews.module.css';
 import { ImStarFull } from 'react-icons/im';
 import { IconContext } from "react-icons";
-//TODO: add button
+import Header from '../components/header';
+import Link from 'next/link'
+
 export default function Reviews() {
   return (
     <div className={styles['reviews-main']}>
+      <Header />
+      <Link href="/pricing">
+      <button className={styles['button-try']}> <span>TRY IT NOW</span> </button>
+      </Link>
       <div className={styles['reviews-content']}>
         <img src="/media/media2.png" className={styles['reviews-image']}/>
         <div>

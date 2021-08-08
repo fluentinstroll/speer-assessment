@@ -23,14 +23,70 @@
     margin: 3px;
 }
 
-.pricing-important1 {
+.pricing-important1 .pricing-fonts {
     color: red;
 }
 
-.pricing-important2 {
+.pricing-important2 .pricing-fonts {
     color: yellow;
 }
 
-.pricing-important3 {
+.pricing-important3 .pricing-fonts{
     color: lightblue;
 }
+.pricing-important1 .pricing-h1 {
+    color: red;
+}
+
+.pricing-important2 .pricing-h1 {
+    color: yellow;
+}
+
+.pricing-important3 .pricing-h1{
+    color: lightblue;
+}
+.button-monthly {
+    background: red;
+}
+
+.button-yearly {
+    background: yellow;
+}
+.button-pro {
+    background: lightblue;
+}
+.button {
+    position: relative;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    padding: 1em 2em;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 100px;
+    
+  }
+  .button span {
+    position: relative;
+    pointer-events: none;
+  }
+  .button::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #4405f7, transparent);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    transition: width .2s ease, height .2s ease;
+  }
+  .button:hover::before {
+    --size: 400px;
+  }

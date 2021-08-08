@@ -1,9 +1,12 @@
 import styles from '../styles/Pricing.module.css';
 import { BsMusicNote } from 'react-icons/bs';
+import Header from '../components/header';
 
 export default function Pricing() {
   return (
     <div className={styles['pricing-main']}>
+      <Header />
+      
       <h1 style={{ color: 'white' }}>PRICING</h1>
       <h2 style={{ color: 'white' }}>
         Test out our app today! Choose from three subscription-based payment
@@ -36,7 +39,7 @@ export default function Pricing() {
           <p className={styles['pricing-fonts']}>
             <BsMusicNote /> Features
           </p>
-          <button> SELECT </button>
+          <button className={styles['button-monthly'] + " " + styles.button}> <span>SELECT</span> </button>
         </div>
         <div className={styles['pricing-info']}>
           <div className={styles['pricing-important2']}>
@@ -63,7 +66,7 @@ export default function Pricing() {
           <p className={styles['pricing-fonts']}>
             <BsMusicNote /> More Features
           </p>
-          <button> SELECT </button>
+          <button className={styles['button-yearly'] + " " + styles.button}> <span>SELECT</span> </button>
         </div>
         <div className={styles['pricing-info']}>
           <div className={styles['pricing-important3']}>
@@ -91,7 +94,7 @@ export default function Pricing() {
           <p className={styles['pricing-fonts']}>
             <BsMusicNote /> More Features
           </p>
-          <button> SELECT </button>
+          <button className={styles['button-pro'] + " " + styles.button}> <span>SELECT</span> </button>
         </div>
       </div>
     </div>
